@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Schools Audits | Umoja Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-badge">U</div>
+                <div>
+                    <span class="logo-text">UMOJA</span>
+                    <span class="logo-sub">FOUNDATION</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="safe-schools.html" class="active">Safe Schools</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Member Signup</a></li>
+                <li><a href="login.html" class="btn btn-secondary" style="padding: 6px 16px;">Admin Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HEADER TITLE & SEARCH -->
+    <section class="container" style="margin-top: 48px;">
+        <div class="text-center" style="max-width: 700px; margin: 0 auto 32px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-terracotta); text-transform: uppercase; margin-bottom: 8px; display: block;">W.A.S.H. DIAGNOSTICS</span>
+            <h1 style="font-size: 2.5rem; color: var(--color-dark-blue); margin-bottom: 12px;">Safe Schools Auditing Network</h1>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 24px;">Our regional coordinators travel on-foot to schools in Kibera, Turkana, and Mukuru to diagnose, rate, and publish current water, sanitation, and hygiene metrics.</p>
+            
+            <!-- Search Bar -->
+            <div style="position: relative; max-width: 500px; margin: 0 auto;">
+                <input type="text" id="school-search-input" placeholder="Type school name or region (e.g. Kibera, Turkana)..." style="width: 100%; padding: 14px 20px; border-radius: 99px; border: 1.5px solid var(--color-clay); font-size: 0.95rem; outline: none; transition: border-color 0.2s;">
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE AUDIT VIEWER LAYOUT -->
+    <section class="container" style="margin-bottom: 80px;">
+        <div class="audit-layout">
+            
+            <!-- Left: List of Audits -->
+            <div>
+                <h3 style="font-size: 1.15rem; margin-bottom: 12px; color: var(--color-dark-blue); text-align: left;">Schools Database</h3>
+                <div class="audit-selector-box">
+                    
+                    <button class="audit-selector-item active" 
+                        data-name="St. Mary's Primary School" 
+                        data-region="Kibera" 
+                        data-status="Critical Attention Required" 
+                        data-students="920" 
+                        data-wash="34" 
+                        data-source="Unreliable Rain Barrel" 
+                        data-date="July 12, 2026" 
+                        data-findings="Primary water infrastructure is broken. 920 students share a single leaking rain barrel with zero chemical water-treatment supplies. Pit latrines are over capacity and pose serious sanitary hazards. Sinks are non-functional due to line damage. Immediate emergency piping retrofit and sink installation is required.">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 600;">St. Mary's Primary</h4>
+                            <span style="background-color: #FEE2E2; color: #991B1B; font-size: 0.65rem; font-weight: bold; padding: 2px 8px; border-radius: 99px;">Critical</span>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--color-text-muted);">Kibera Region • W.A.S.H: 34/100</p>
+                    </button>
+
+                    <button class="audit-selector-item" 
+                        data-name="Kalam Nala Girls Academy" 
+                        data-region="Turkana" 
+                        data-status="Pending Improvements" 
+                        data-students="450" 
+                        data-wash="68" 
+                        data-source="Solar Borehole" 
+                        data-date="June 28, 2026" 
+                        data-findings="Benefiting from a solar borehole installed in 2025. Clean drinking water is reliably available, but the handwashing sink count is inadequate for the growing student enrollment. Maintenance committee requires training refreshers on pump operations. No active microbial pathogens found. Recommend 6 new sink installations.">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 600;">Kalam Nala Girls Academy</h4>
+                            <span style="background-color: #FEF3C7; color: #92400E; font-size: 0.65rem; font-weight: bold; padding: 2px 8px; border-radius: 99px;">Pending</span>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--color-text-muted);">Turkana Region • W.A.S.H: 68/100</p>
+                    </button>
+
+                    <button class="audit-selector-item" 
+                        data-name="Mukuru Hope Academy" 
+                        data-region="Mukuru" 
+                        data-status="Completed" 
+                        data-students="1150" 
+                        data-wash="94" 
+                        data-source="Community Piping Grid" 
+                        data-date="May 15, 2026" 
+                        data-findings="Umoja Foundation completely overhauled the pipeline grid here in early 2026. 1,150 children now have direct access to continuous clean drinking water. Constructed 32 handwashing sinks with continuous chlorine chlorinator tablets in place. Sanitation cards show zero typhoid incidents since installation. System is self-sustaining.">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 600;">Mukuru Hope Academy</h4>
+                            <span style="background-color: #D1FAE5; color: #065F46; font-size: 0.65rem; font-weight: bold; padding: 2px 8px; border-radius: 99px;">Safe</span>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--color-text-muted);">Mukuru Region • W.A.S.H: 94/100</p>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Right: Dynamic Detailed View Box -->
+            <div class="audit-detail-box" id="audit-detail-box" style="transition: opacity 0.15s ease-out;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+                    <div>
+                        <h3 style="font-size: 1.6rem; color: var(--color-dark-blue);">St. Mary's Primary School</h3>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Kibera Region</p>
+                    </div>
+                    <span style="background-color: #FEE2E2; color: #991B1B; font-size: 0.75rem; font-weight: 700; padding: 6px 12px; border-radius: 99px;">
+                        Critical Attention Required
+                    </span>
+                </div>
+                
+                <div style="grid-template-columns: repeat(3, 1fr); display: grid; gap: 16px; margin-bottom: 24px; padding: 16px; background-color: var(--color-sand-bg); border-radius: 8px;">
+                    <div>
+                        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Enrollment</p>
+                        <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark-blue);">920 Students</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">Water System</p>
+                        <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark-blue);">Unreliable Rain Barrel</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-text-muted);">W.A.S.H. Rating</p>
+                        <p style="font-size: 1.15rem; font-weight: 700; color: var(--color-terracotta);">34 / 100</p>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 24px; text-align: left;">
+                    <h4 style="font-size: 1rem; margin-bottom: 8px;">Field Audit Diagnosis Findings</h4>
+                    <p style="color: var(--color-text-dark); font-size: 0.9rem; line-height: 1.6;">Primary water infrastructure is broken. 920 students share a single leaking rain barrel with zero chemical water-treatment supplies. Pit latrines are over capacity and pose serious sanitary hazards. Sinks are non-functional due to line damage. Immediate emergency piping retrofit and sink installation is required.</p>
+                </div>
+                
+                <div style="font-size: 0.8rem; color: var(--color-text-muted); border-top: 1px solid var(--color-clay); padding-top: 16px; display: flex; justify-content: space-between;">
+                    <span>Audit Reference Date: July 12, 2026</span>
+                    <span>Inspection ID: WASH-2026-1049</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-badge" style="background-color: var(--color-clay); color: var(--color-dark-blue);">U</div>
+                        <span class="logo-text" style="color: white;">UMOJA</span>
+                    </a>
+                    <p>Fostering permanent sanitization solutions and sustainable rainwater capture grids to elevate education standards in East Africa.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Direct Support</h4>
+                    <ul>
+                        <li><a href="donate.html">Sponsor Clean Water</a></li>
+                        <li><a href="project.html">Explore Projects</a></li>
+                        <li><a href="signup.html">Become a Member</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>W.A.S.H. Audits</h4>
+                    <ul>
+                        <li><a href="safe-schools.html">Audit Directory</a></li>
+                        <li><a href="login.html">Coordinator Login</a></li>
+                        <li><a href="contact.html">Report School Hazard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 8px;">Umoja Foundation Headquarters<br>Nairobi, Kenya</p>
+                    <p style="font-size: 0.8rem; opacity: 0.7;"><a href="mailto:info@umoja.org" style="color: white; text-decoration: none;">info@umoja.org</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>&copy; 2026 Umoja Foundation. All rights reserved. Registered Humanitarian Non-Profit.</span>
+                <span>Active Impact Tracker: $41,450 Donated across 1,482 Backers</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

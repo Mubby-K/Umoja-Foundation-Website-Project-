@@ -1,0 +1,6 @@
+{
+  "name": "Umoja Foundation",
+  "description": "A professional portal showcasing Umoja Foundation's mission, ongoing school sanitation impact, and interactive donation platforms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

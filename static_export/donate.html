@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Clean Water | Umoja Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- STICKY HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-badge">U</div>
+                <div>
+                    <span class="logo-text">UMOJA</span>
+                    <span class="logo-sub">FOUNDATION</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="safe-schools.html">Safe Schools</a></li>
+                <li><a href="donate.html" class="active">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Member Signup</a></li>
+                <li><a href="login.html" class="btn btn-secondary" style="padding: 6px 16px;">Admin Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MAIN DONATION SECTION -->
+    <section class="container" style="margin-top: 48px;">
+        <div class="text-center" style="max-width: 650px; margin: 0 auto 32px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-terracotta); text-transform: uppercase; margin-bottom: 8px; display: block;">DIRECT IMPACT</span>
+            <h1 style="font-size: 2.5rem; color: var(--color-dark-blue); margin-bottom: 12px;">Fund Real Pipelines & Clean Restrooms</h1>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem;">Select your sponsorship contribution level. Your transaction is encrypted, highly secure, and is allocated directly to active school infrastructure materials.</p>
+        </div>
+
+        <div class="donate-grid">
+            
+            <!-- Left Side: Dynamic Form -->
+            <div class="donate-form-side">
+                <form id="donation-interactive-form">
+                    
+                    <div class="form-group">
+                        <label>Select Sponsorship Level</label>
+                        <div class="pill-grid">
+                            <div class="amount-pill" data-amount="25">$25</div>
+                            <div class="amount-pill active" data-amount="50">$50</div>
+                            <div class="amount-pill" data-amount="100">$100</div>
+                            <div class="amount-pill" data-amount="250">$250</div>
+                            <div class="amount-pill" data-amount="500">$500</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="other-amount">Or Enter Custom Amount ($ USD)</label>
+                        <input type="number" id="other-amount" placeholder="e.g. 75" min="5">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Payment Integration Gateway</label>
+                        <select id="payment-method" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--color-clay);">
+                            <option value="card">Credit or Debit Card (Global Security)</option>
+                            <option value="mpesa">M-Pesa / Mobile Money (Direct East Africa)</option>
+                            <option value="paypal">PayPal Gateway</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-email">Tax Receipt Email Address</label>
+                        <input type="email" id="donor-email" placeholder="you@example.com" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--color-clay);">
+                    </div>
+
+                    <button type="submit" class="btn w-full" style="width: 100%; padding: 14px 20px; font-size: 1rem; margin-top: 12px;">Process Safe Sponsorship</button>
+                </form>
+            </div>
+
+            <!-- Right Side: Real-time Impact Text -->
+            <div class="donate-impact-side">
+                <div>
+                    <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-terracotta); margin-bottom: 12px; display: block;">Dynamic Humanitarian Impact</span>
+                    <h2 style="font-size: 1.8rem; line-height: 1.2; margin-bottom: 20px; color: white;">Your Support in Action</h2>
+                    <p id="dynamic-impact-desc" style="font-size: 1rem; opacity: 0.95; line-height: 1.6;">Your $50 contribution finances complete chemical chlorine treatment supplies to provide clean drinking water for a school of 150 kids for a month.</p>
+                </div>
+                
+                <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; margin-top: 40px; font-size: 0.8rem; opacity: 0.8; text-align: left;">
+                    <p style="font-weight: 700; margin-bottom: 4px; color: white;">Umoja Foundation Transparency Guarantee</p>
+                    <p>93% of all financial sponsorships directly fund physical materials, water tanks, pipelines, and local contractor wages on-site.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-badge" style="background-color: var(--color-clay); color: var(--color-dark-blue);">U</div>
+                        <span class="logo-text" style="color: white;">UMOJA</span>
+                    </a>
+                    <p>Fostering permanent sanitization solutions and sustainable rainwater capture grids to elevate education standards in East Africa.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Direct Support</h4>
+                    <ul>
+                        <li><a href="donate.html">Sponsor Clean Water</a></li>
+                        <li><a href="project.html">Explore Projects</a></li>
+                        <li><a href="signup.html">Become a Member</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>W.A.S.H. Audits</h4>
+                    <ul>
+                        <li><a href="safe-schools.html">Audit Directory</a></li>
+                        <li><a href="login.html">Coordinator Login</a></li>
+                        <li><a href="contact.html">Report School Hazard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 8px;">Umoja Foundation Headquarters<br>Nairobi, Kenya</p>
+                    <p style="font-size: 0.8rem; opacity: 0.7;"><a href="mailto:info@umoja.org" style="color: white; text-decoration: none;">info@umoja.org</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>&copy; 2026 Umoja Foundation. All rights reserved. Registered Humanitarian Non-Profit.</span>
+                <span>Active Impact Tracker: $41,450 Donated across 1,482 Backers</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

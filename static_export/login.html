@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinator Login | Umoja Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-badge">U</div>
+                <div>
+                    <span class="logo-text">UMOJA</span>
+                    <span class="logo-sub">FOUNDATION</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="safe-schools.html">Safe Schools</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Member Signup</a></li>
+                <li><a href="login.html" class="btn btn-secondary active" style="padding: 6px 16px;">Admin Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- LOGIN SPLIT CONTAINER -->
+    <section class="container" style="margin-top: 32px;">
+        <div class="login-split">
+            
+            <!-- Left Side: Story & Context Narrative -->
+            <div class="login-story-side">
+                <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-terracotta); margin-bottom: 16px; display: block;">UMOJA STAFF PORTAL</span>
+                <h2 style="font-size: 2.2rem; color: white; line-height: 1.15; margin-bottom: 20px;">Dedicated Field Coordination</h2>
+                <p style="font-size: 0.95rem; opacity: 0.9; line-height: 1.6; margin-bottom: 24px;">This secure portal is reserved for certified Umoja regional field coordinators, engineering auditors, and program directors.</p>
+                <p style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">Authorized session tracking logs location and diagnostic signatures to maintain full data integrity of community W.A.S.H. audits.</p>
+            </div>
+
+            <!-- Right Side: Interaction Credentials Form -->
+            <div class="login-form-side">
+                <h2 style="font-size: 1.8rem; margin-bottom: 8px; color: var(--color-dark-blue);">Coordinator Sign In</h2>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 32px;">Verify credentials to edit school sanitation databases or file diagnostics.</p>
+                
+                <form id="admin-login-form">
+                    <div class="form-group">
+                        <label for="login-email">Authorized Staff Email</label>
+                        <input type="email" id="login-email" placeholder="coordinator@umoja.org" required value="david.otieno@umoja.org">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 24px;">
+                        <label for="login-password">Secret Password Token</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required value="umoja2026">
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <label style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--color-text-muted); cursor: pointer;">
+                            <input type="checkbox" checked style="width: auto;"> Remember Device Security
+                        </label>
+                        <a href="#" onclick="alert('Password recovery links have been forwarded to the global Umoja Tech Administrator.'); return false;" style="font-size: 0.8rem; color: var(--color-terracotta); text-decoration: none; font-weight: 600;">Reset Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn w-full" style="width: 100%; padding: 12px 20px; font-size: 0.95rem;">Authenticate & Sync</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-badge" style="background-color: var(--color-clay); color: var(--color-dark-blue);">U</div>
+                        <span class="logo-text" style="color: white;">UMOJA</span>
+                    </a>
+                    <p>Fostering permanent sanitization solutions and sustainable rainwater capture grids to elevate education standards in East Africa.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Direct Support</h4>
+                    <ul>
+                        <li><a href="donate.html">Sponsor Clean Water</a></li>
+                        <li><a href="project.html">Explore Projects</a></li>
+                        <li><a href="signup.html">Become a Member</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>W.A.S.H. Audits</h4>
+                    <ul>
+                        <li><a href="safe-schools.html">Audit Directory</a></li>
+                        <li><a href="login.html">Coordinator Login</a></li>
+                        <li><a href="contact.html">Report School Hazard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 8px;">Umoja Foundation Headquarters<br>Nairobi, Kenya</p>
+                    <p style="font-size: 0.8rem; opacity: 0.7;"><a href="mailto:info@umoja.org" style="color: white; text-decoration: none;">info@umoja.org</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>&copy; 2026 Umoja Foundation. All rights reserved. Registered Humanitarian Non-Profit.</span>
+                <span>Active Impact Tracker: $41,450 Donated across 1,482 Backers</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

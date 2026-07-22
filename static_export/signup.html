@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Signup | Umoja Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-badge">U</div>
+                <div>
+                    <span class="logo-text">UMOJA</span>
+                    <span class="logo-sub">FOUNDATION</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="safe-schools.html">Safe Schools</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html" class="active">Member Signup</a></li>
+                <li><a href="login.html" class="btn btn-secondary" style="padding: 6px 16px;">Admin Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SIGNUP CONTAINER -->
+    <section class="container" style="margin-top: 32px;">
+        <div class="login-split">
+            
+            <!-- Left Side: Community Mission & Benefits -->
+            <div class="login-story-side" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800');">
+                <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-clay); margin-bottom: 16px; display: block;">JOIN OUR MOVEMENT</span>
+                <h2 style="font-size: 2.2rem; color: white; line-height: 1.15; margin-bottom: 20px;">Support Local Water Autonomy</h2>
+                <p style="font-size: 0.95rem; opacity: 0.9; line-height: 1.6; margin-bottom: 24px;">Sign up as a registered community member to stay updated on school construction timelines, volunteer opportunities, and receive detailed quarterly impact reports.</p>
+                <p style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">There is no financial fee to register. We welcome your skills, local voice, or structural advocacy to spread sanitization safety.</p>
+            </div>
+
+            <!-- Right Side: Interaction Credentials Form -->
+            <div class="login-form-side">
+                <h2 style="font-size: 1.8rem; margin-bottom: 8px; color: var(--color-dark-blue);">Become a Member</h2>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 32px;">Fill out the parameters below to launch your community member profile.</p>
+                
+                <form id="member-signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Your Full Name</label>
+                        <input type="text" id="signup-name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-email">Active Email Address</label>
+                        <input type="email" id="signup-email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-phone">Phone Number (Optional)</label>
+                        <input type="tel" id="signup-phone" placeholder="e.g. +254 700 000 000">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 24px;">
+                        <label style="display: flex; align-items: start; gap: 8px; font-size: 0.85rem; color: var(--color-text-dark); cursor: pointer; text-transform: none; font-weight: 500;">
+                            <input type="checkbox" id="signup-volunteer" style="width: auto; margin-top: 3px;">
+                            <span>I would like to receive notifications for regional volunteering days or local construction audits.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn w-full" style="width: 100%; padding: 12px 20px; font-size: 0.95rem;">Join Our Mission</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-badge" style="background-color: var(--color-clay); color: var(--color-dark-blue);">U</div>
+                        <span class="logo-text" style="color: white;">UMOJA</span>
+                    </a>
+                    <p>Fostering permanent sanitization solutions and sustainable rainwater capture grids to elevate education standards in East Africa.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Direct Support</h4>
+                    <ul>
+                        <li><a href="donate.html">Sponsor Clean Water</a></li>
+                        <li><a href="project.html">Explore Projects</a></li>
+                        <li><a href="signup.html">Become a Member</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>W.A.S.H. Audits</h4>
+                    <ul>
+                        <li><a href="safe-schools.html">Audit Directory</a></li>
+                        <li><a href="login.html">Coordinator Login</a></li>
+                        <li><a href="contact.html">Report School Hazard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 8px;">Umoja Foundation Headquarters<br>Nairobi, Kenya</p>
+                    <p style="font-size: 0.8rem; opacity: 0.7;"><a href="mailto:info@umoja.org" style="color: white; text-decoration: none;">info@umoja.org</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>&copy; 2026 Umoja Foundation. All rights reserved. Registered Humanitarian Non-Profit.</span>
+                <span>Active Impact Tracker: $41,450 Donated across 1,482 Backers</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
