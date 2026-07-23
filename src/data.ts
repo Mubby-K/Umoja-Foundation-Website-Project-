@@ -85,19 +85,19 @@ export const TEAM: TeamMember[] = [
   {
     name: 'Mubaarakah Salwat Rashid',
     role: 'Executive Director',
-    image: '/src/assets/images/mubaarakah_salwat_rashid_1784732734921.jpg',
+    image: '/src/assets/images/profile.jpeg',
     bio: 'An impassioned advocate for public health and gender equality, Mubaarakah directs our central vision. She spearheads policy frameworks, international partner collaborations, and community integration to secure clean environments for girls across Ghana.'
   },
   {
-    name: 'Dr. Kofi Asante',
+    name: 'Nawarah Salwat Rashid',
     role: 'Program Director',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300',
+    image: '/src/assets/images/Nawarah.png',
     bio: 'With over 12 years of structural engineering and hydrology expertise, Dr. Asante supervises our physical designs. He oversees borehole drilling precision, water purification standards, and long-term facility health checkups.'
   },
   {
-    name: 'Evelyn Mensah',
+    name: 'Hamdia Salwat Rashid',
     role: 'Field Lead & Health Educator',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300',
+    image: '/src/assets/images/Hamdia.png',
     bio: 'Evelyn leads our ground education campaigns. She facilitates localized Menstrual Hygiene Management workshops, manages physical kit distributions, and builds trusted alliances with regional parent-teacher associations.'
   },
   {
